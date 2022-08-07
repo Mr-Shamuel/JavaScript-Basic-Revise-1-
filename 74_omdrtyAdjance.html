@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>child node  </title>
+
+    <style>
+        .xyz{
+             color:tomato;
+        }
+    </style>
+</head>
+<body>
+
+    
+  
+  <div id="parent">
+    <p id="txt" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, recusandae? Ullam consequuntur alias nisi praesentium asperiores fugiat, officia porro repellendus architecto quasi. Nemo cumque minus mollitia a beatae perspiciatis id.</p>
+    <p id="txt2" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, recusandae? Ullam consequuntur alias nisi praesentium asperiores fugiat, officia porro repellendus architecto quasi. Nemo cumque minus mollitia a beatae perspiciatis id.</p>
+    <p id="txt3" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, recusandae? Ullam consequuntur alias nisi praesentium asperiores fugiat, officia porro repellendus architecto quasi. Nemo cumque minus mollitia a beatae perspiciatis id.</p>
+    <p id="txt4" >Last child element</p>
+
+</div>
+   <script>
+ 
+ 
+ 
+  //APPEND CHILD
+const a = document.createElement('h1');
+const b = document.createTextNode('i love my country');
+ a.appendChild(b);
+var target=document.getElementById('txt3');
+target.insertAdjacentElement('afterbegin', a);
+//insert before methode
+
+ 
+    </script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

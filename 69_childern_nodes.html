@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>child node  </title>
+
+    <style>
+        .xyz{
+             color:tomato;
+        }
+    </style>
+</head>
+<body>
+
+    
+  
+  <div id="parent">
+    <h2 id="txt" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, recusandae? Ullam consequuntur alias nisi praesentium asperiores fugiat, officia porro repellendus architecto quasi. Nemo cumque minus mollitia a beatae perspiciatis id.</h2>
+    <h4 id="txt2" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, recusandae? Ullam consequuntur alias nisi praesentium asperiores fugiat, officia porro repellendus architecto quasi. Nemo cumque minus mollitia a beatae perspiciatis id.</h4>
+    <h4 id="txt3" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, recusandae? Ullam consequuntur alias nisi praesentium asperiores fugiat, officia porro repellendus architecto quasi. Nemo cumque minus mollitia a beatae perspiciatis id.</h4>
+    <h2 id="txt4" >Last child element</h2>
+
+</div>
+   <script>
+ 
+ // children
+ 
+    const x = document.getElementById('parent').firstElementChild;
+ console.log(x);
+  x.innerHTML='orange';
+  x.style.color='orange';
+
+  const y = document.getElementById('parent').lastElementChild;
+  y.style.color='red';
+ 
+  //APPEND CHILD
+const a = document.createElement('h2');
+const b = document.createTextNode('i love my country');
+const res = a.appendChild(b);
+document.getElementById('parent').appendChild(res);
+
+//insert before methode
+
+const temp = document.createElement('p');
+const store  = document.createTextNode(" This is text node!!");
+const value = temp.appendChild(store);
+
+ const result=document.getElementById('txt3').insertBefore(store, value);
+ 
+ document.getElementById('txt3').style.color='green';
+    </script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

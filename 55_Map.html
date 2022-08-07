@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map methode in Array</title>
+</head>
+<body>
+    <script>
+ 
+
+//map
+//task 1
+const  Student =[2,5,1,6,3,62];
+const res = Student.map(function(x){
+    return x*10;
+})
+ document.write(res +"</br>");
+
+
+ //task 2
+ var Student2 =[
+   { fname:'Shamuel', Lname:'Molla',age:26},
+   { fname:'rana', Lname:'khan',age:22},
+   { fname:'Abir', Lname:'Sheikh',age:25}
+
+   ]
+
+   const result =Student2.map(function(x){
+    return x.fname + " " + x.Lname;
+
+})
+document.write(result + "</br>");
+ 
+
+      
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set/clear interval</title>
+</head>
+<body>
+   <button id="start" onclick="start()">Start Counter</button>
+   <button id="stop" onclick="stop()">Stop Counter</button>
+    
+   
+<h4 id="info">0</h4>
+<h4 id="info2">0</h4>
+<script>
+        
+        var count= 0;
+        
+ //start timer
+const start=()=>{
+    setInterval(()=>{
+        if (count==5){
+        clearInterval(start);
+    }else{
+        var target = document.getElementById('info');
+    count= count+1;
+  target.innerHTML=count;
+    } 
+
+  
+
+ },1000)
+}
+
+ 
+
+
+
+
+// setInterval(() => {
+// //     const d= new Date();
+// //     var store = d.getSeconds();
+ 
+//    var target = document.getElementById('info');
+//   count = count+10;
+//   target.innerHTML=count;
+//   console.log(count);
+
+// }, 1000);
+    </script>
+</body>
+</html>

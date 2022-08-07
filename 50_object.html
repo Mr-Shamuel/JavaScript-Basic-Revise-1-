@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+    <script>
+        var obj = {
+            fname:'Shamuel',
+            Lname:'Molla',
+            email:'sam@example.com',
+            age:24,
+            
+            address:{
+                vill:"ModhurDia",
+                post: "punchuria"
+            },
+            arr2: ["sam","ashik","rony","ontu","sojib"],
+            salary: function (a,b){
+                var add = a+b;;
+                return add;
+            },
+            fullName: function (){
+                return this.fname+" "+this.Lname;
+            }
+
+
+        }
+
+        document.write("Object: "+obj.email+"</br>"); 
+        document.write("Object2: "+obj.address.vill+"</br>"); 
+        document.write("array: "+obj.arr2[1]+"</br>"); 
+        document.write("function: "+obj.salary(10,20) +"</br>"); 
+        document.write("function2: "+obj.fullName() +"</br>"); 
+      
+      
+
+    </script>
+    
+</body>
+</html>
